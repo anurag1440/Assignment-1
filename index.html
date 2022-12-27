@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/script.js"></script>
+</head>
+<body>
+    <!-- <div class="card">
+        <div class="card_content">
+            <input type="checkbox" id="y1" name="2021" onclick="myFunction1()" value="2021">
+            <label for="vehicle1"> 2021</label><br>
+            <input type="checkbox" id="y2" name="2022" value="2022">
+            <label for="vehicle2"> 2022</label><br>
+            <input type="checkbox" id="y3" name="2023" value="2023">
+            <label for="vehicle3"> 2022</label><br>
+        </div>
+        
+  </div> -->
+
+  <div id="email-list" class="card">
+    <div class="inputGroup">
+      <input id="option1" name="option1" type="checkbox" class="checkoption" value="1" onclick="myFunction1() " onchange="valueChange()" />
+    <label for=" option1">2021</label>
+    </div>
+    
+    <div class="inputGroup">
+      <input id="option2" name="option2" type="checkbox" class="checkoption" value="2" onclick="myFunction2()" onchange="valueChange()" />
+    <label for=" option2">2022</label>
+    </div>
+    <div class="inputGroup">
+      <input id="option3" name="option3" type="checkbox" class="checkoption" value="3" onclick="myFunction3()" onchange="valueChange()" />
+      <label for=" option3">2023</label>
+    </div>
+  </div>
+
+   <!-- dropdowns -->
+
+
+  <div id="2021" class="card" style="display:none">
+        <div class="card_content">
+            <div id="myDropdown" class="dropdown-content">
+                <div class="inputGroup">
+                    <h2>2021</h2>
+                    <input id="op1" name="op1" type="checkbox" onclick="function1()" />
+                    <label for=" op1">Jan-Apr</label>
+                  </div>
+                  
+                  <div class="inputGroup">
+                    <input id="op2" name="op2" type="checkbox" onclick="function2()" />
+                    <label for=" op2">May-Aug</label>
+                  </div>
+                  <div class="inputGroup">
+                    <input id="op3" name="op3" type="checkbox" onclick="function3()" />
+                    <label for=" op3">Sep-Dec</label>
+                  </div>
+                
+              </div>
+            
+        </div>   
+  </div>
+
+
+
+  <div id="2022" class="card" style="display:none">
+    <div class="card_content">
+        <div id="myDropdown" class="dropdown-content">
+            <div class="inputGroup">
+                <h2>2022</h2>
+                <input id="op1" name="op1" type="checkbox" onclick="function1()" />
+                <label for=" op1">Jan-Apr</label>
+              </div>
+              
+              <div class="inputGroup">
+                <input id="op2" name="op2" type="checkbox" onclick="function2()" />
+                <label for=" op2">May-Aug</label>
+              </div>
+              <div class="inputGroup">
+                <input id="op3" name="op3" type="checkbox" onclick="function3()" />
+                <label for="op3">Sep-Dec</label>
+              </div>
+            
+          </div>
+        
+    </div>    
+</div>
+
+<div id="2023" class="card" style="display:none">
+    <div class="card_content">
+        <div id="myDropdown" class="dropdown-content">
+            <div class="inputGroup">
+                <h2>2023</h2>
+                <input id="op1" name="op1" type="checkbox" onclick="function11()" />
+                <label for=" op1">Jan-Apr</label>
+              </div>
+              
+              <div class="inputGroup">
+                <input id="op2" name="op2" type="checkbox" onclick="function2()" />
+                <label for=" op2">May-Aug</label>
+              </div>
+              <div class="inputGroup">
+                <input id="op3" name="op3" type="checkbox" onclick="function3()" />
+                <label for=" op3">Sep-Dec</label>
+              </div>
+            
+          </div>
+        
+    </div>    
+</div>
+
+
+<!-- options -->
+
+<div id="j-a" class="card" style="display:none">
+    <div class="card_content">
+        <div id="myDropdown" class="dropdown-content">
+            <div class="inputGroup">
+                <h3>Jan</h3>
+            </div>
+              
+              <div class="inputGroup">
+               <h3>Feb</h3>
+              </div>
+              <div class="inputGroup">
+                <h3>Mar</h3>
+              </div>
+              <div class="inputGroup">
+                <h3>Apr</h3>
+              </div>
+            
+          </div>
+        
+    </div>    
+</div>
+
+<div id="j-a1" class="card" style="display:none">
+    <div class="card_content">
+        <div id="myDropdown" class="dropdown-content">
+            <div class="inputGroup">
+                <h3>Jan</h3>
+            </div>
+              
+              <div class="inputGroup">
+               <h3>Feb</h3>
+              </div>
+              <div class="inputGroup">
+                <h3>Mar</h3>
+              </div>
+              <div class="inputGroup">
+                <h3>Apr</h3>
+              </div>
+            
+          </div>
+        
+    </div>    
+</div>
+
+<div id="m-a" class="card" style="display:none">
+    <div class="card_content">
+        <div id="myDropdown" class="dropdown-content">
+            <div class="inputGroup">
+                <h3>May</h3>
+            </div>
+              
+              <div class="inputGroup">
+               <h3>Jun</h3>
+              </div>
+              <div class="inputGroup">
+                <h3>July</h3>
+              </div>
+              <div class="inputGroup">
+                <h3>Aug</h3>
+              </div>
+            
+          </div>
+        
+    </div>    
+</div>
+
+<div id="s-d" class="card" style="display:none">
+    <div class="card_content">
+        <div id="myDropdown" class="dropdown-content">
+            <div class="inputGroup">
+                <h3>Sep</h3>
+            </div>
+              
+              <div class="inputGroup">
+               <h3>Oct</h3>
+              </div>
+              <div class="inputGroup">
+                <h3>Nov</h3>
+              </div>
+              <div class="inputGroup">
+                <h3>Dec</h3>
+              </div>
+            
+          </div>
+        
+    </div>    
+</div>
+
+
+
+
+
+
+
+
+
+          <!-- scripts -->
+  
+  <script>
+    function myFunction1() {
+  var checkBox = document.getElementById("option1");
+  // Get the output text
+  var text = document.getElementById("2021");
+
+  // If the checkbox is checked, display the output text
+  if (checkBox.checked == true) {
+    text.style.display = "block";
+  } else {
+    text.style.display = "none";
+  }
+
+ 
+}
+
+function myFunction2() {
+  var checkBox = document.getElementById("option2");
+  // Get the output text
+  var text = document.getElementById("2022");
+
+  // If the checkbox is checked, display the output text
+  if (checkBox.checked == true) {
+    text.style.display = "block";
+  } else {
+    text.style.display = "none";
+  }
+  
+}
+
+function myFunction3() {
+  var checkBox = document.getElementById("option3");
+  // Get the output text
+  var text = document.getElementById("2023");
+
+  // If the checkbox is checked, display the output text
+  if (checkBox.checked == true) {
+    text.style.display = "block";
+  } else {
+    text.style.display = "none";
+  }
+  
+}
+
+function function1(){
+    var checkBox = document.getElementById("op1");
+  // Get the output text
+  var text = document.getElementById("j-a");
+
+  // If the checkbox is checked, display the output text
+  if (checkBox.checked == true) {
+    text.style.display = "block";
+  } else {
+    text.style.display = "none";
+  }
+}
+
+function function11(){
+    var checkBox = document.getElementById("op1");
+  // Get the output text
+  var text = document.getElementById("j-a1");
+
+  // If the checkbox is checked, display the output text
+  if (checkBox.checked == true) {
+    text.style.display = "block";
+  } else {
+    text.style.display = "none";
+  }
+}
+
+function function2(){
+    var checkBox = document.getElementById("op2");
+  // Get the output text
+  var text = document.getElementById("m-a");
+
+  // If the checkbox is checked, display the output text
+  if (checkBox.checked == true) {
+    text.style.display = "block";
+  } else {
+    text.style.display = "none";
+  }
+}
+
+function function3(){
+    var checkBox = document.getElementById("op3");
+  // Get the output text
+  var text = document.getElementById("s-d");
+
+  // If the checkbox is checked, display the output text
+  if (checkBox.checked == true) {
+    text.style.display = "block";
+  } else {
+    text.style.display = "none";
+  }
+}
+  </script>
+
+
+
+
+  <!-- <div class="card">
+    <div class="card_content">
+        <input type="checkbox" id="y1" name="2021" value="2021">
+        <label for="vehicle1"> Jan-Apr</label><br>
+        <input type="checkbox" id="y2" name="2022" value="2022">
+        <label for="vehicle2"> May-Aug</label><br>
+        <input type="checkbox" id="y3" name="2023" value="2023">
+        <label for="vehicle3"> Sept-Dec</label><br>
+    </div>
+     -->
+</div>
+</div>
+</body>
+</html>

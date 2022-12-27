@@ -1,0 +1,34 @@
+body{
+    background-color: azure;
+}.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 20%;
+  margin: auto;
+  background-color: rgb(170, 246, 247);
+  color: rgb(106, 104, 104);
+  
+}
+
+input{
+    margin: 10px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 16px 16px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+.card-content{
+    margin-top: 15px;
+}
